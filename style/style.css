@@ -151,6 +151,60 @@ main>section {
   margin-bottom: 24px;
 }
 
+/* features style */
+
+.feature-section {
+  gap: 140px;
+}
+
+#feature-section-title {
+  border-left: 6px solid #FF900E;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.feature-card {
+  padding: 30px;
+  border: 7px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+
+}
+
+.feature-title2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.feature-description2 {
+  font-size: 1rem;
+  color: #727272;
+  margin-bottom: 32px;
+
+}
+
+#exp-badge {
+  padding: 30px;
+  margin-left: -100px;
+  margin-top: -70px;
+  height: 210px;
+  width: 322px;
+}
+
+#exp-year {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+#exp {
+  font-size: 1rem;
+}
+
+.feature-architect img {
+  width: 100%;
+}
+
 /* some facts style */
 
 .fact-container {
@@ -183,6 +237,33 @@ main>section {
   margin-top: 10px;
 }
 
+/* sponsor section style */
+.sponsor-info {
+  max-width: 542px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15rem;
+  margin-bottom: 140px;
+}
+
+.sponsor-img img {
+  filter: grayscale(100%);
+}
+
+.footer{
+  text-align: center;
+  background-color: #FFF4E7;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 25px;
+  margin-bottom: 80px;
+  
+}
 /* responsive code */
 
 @media screen and (max-width: 576px) {
@@ -253,11 +334,49 @@ main>section {
     gap: 24px;
   }
 
-  .section-title{
+  .section-title {
     padding-left: 20px;
   }
-  .section-description{
+
+  .section-description {
     padding-left: 20px;
     font-size: 1rem;
   }
+
+  /* sponsor section responsive */
+  .sponsor-img {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+
+  }
+
+  .sponsor-info {
+    margin-right: 15px;
+  }
+
+  /* features section responsive */
+
+  .feature-section {
+    flex-direction: column;
+  }
+
+  #exp-badge {
+    margin-top: 10px;
+    margin-left: 45px;
+  }
+
+  .feature-section {
+    gap: 45px;
+  }
+
+  .feature-description2 {
+    text-align: center;
+  }
+
+  .feature-architect img {
+    width: 90%;
+    margin-left: 25px;
+  }
+
 }
