@@ -10,6 +10,7 @@
   margin: 0px;
 }
 
+
 /* shared style */
 main {
   max-width: 1440px;
@@ -21,7 +22,7 @@ main>section {
 }
 
 .bg-color {
-  background-color: rgba(255, 144, 14, 0.10);
+  background-image: linear-gradient(rgba(0, 174, 255, 0.301), white);
 }
 
 .display-flex {
@@ -37,13 +38,17 @@ main>section {
 }
 
 .btn-primary {
-  background-color: #FF900E;
+  background-color: rgb(8, 99, 141);
   color: #FFFFFF;
   padding: 20px 24px;
   font-size: 1.2rem;
   font-weight: 600;
   border: none;
   border-radius: 7px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(7, 81, 116)
 }
 
 .section-title {
@@ -88,6 +93,7 @@ main>section {
 .brand {
   font-size: 2.8rem;
   font-weight: 700;
+  margin-right: 730px;
 }
 
 /* banner style */
@@ -142,7 +148,7 @@ main>section {
 }
 
 #feature {
-  color: #FF900E;
+  color: rgb(8, 99, 141);
 }
 
 .feature-description {
@@ -158,7 +164,7 @@ main>section {
 }
 
 #feature-section-title {
-  border-left: 6px solid #FF900E;
+  border-left: 6px solid rgb(8, 99, 141);
   padding-left: 20px;
   margin-bottom: 25px;
 }
@@ -215,7 +221,7 @@ main>section {
 }
 
 .fact {
-  border: 1px solid #FF900E;
+  border: 1px solid rgb(8, 99, 141);
   width: 240px;
   height: 230px;
   border-radius: 8px;
@@ -255,20 +261,24 @@ main>section {
   filter: grayscale(100%);
 }
 
-.footer{
+.footer {
   text-align: center;
-  background-color: #FFF4E7;
+  background-color: rgba(0, 174, 255, 0.137);
   max-width: 1440px;
   margin: 0px auto;
   padding: 25px;
   margin-bottom: 80px;
-  
+  color: #727272ad;
 }
+
 /* responsive code */
 
 @media screen and (max-width: 576px) {
 
-  .navbar,
+  main {
+    margin: 12px;
+  }
+
   .nav-links,
   .teams {
     flex-direction: column;
@@ -276,6 +286,8 @@ main>section {
 
   .navbar {
     justify-content: flex-start;
+    gap: 65px;
+    padding-top: 0px;
   }
 
   .nav-links {
@@ -283,7 +295,8 @@ main>section {
   }
 
   .brand {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin: 0.9%;
   }
 
   .banner-title {
@@ -292,13 +305,13 @@ main>section {
   }
 
   .banner-description {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 5px;
   }
 
   .banner-img {
     width: 90%;
-    margin-left: 18px;
+    margin-left: 24px;
   }
 
   /* teams responsive */
@@ -323,7 +336,7 @@ main>section {
   }
 
   #explore {
-    margin-left: 90px;
+    margin-left: 120px;
   }
 
   /* some facts responsive */
@@ -363,7 +376,7 @@ main>section {
 
   #exp-badge {
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 65px;
   }
 
   .feature-section {
@@ -379,4 +392,22 @@ main>section {
     margin-left: 25px;
   }
 
+  .navbar .nav-links {
+    display: none;
+  }
+
+  .menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .menu-section:hover {
+      background-color: rgb(8, 80, 114)
+    }
+
+  .menu-section {
+    padding: 25px;
+  }
 }
